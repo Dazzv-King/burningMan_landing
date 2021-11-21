@@ -1,0 +1,357 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Anton', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	color: 000;
+	font-style: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Anton', sans-serif;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.container{ 
+	width: 1170px;
+	margin: 0 auto; /*позицирование по центру*/
+}
+
+.header{ /*верхная часть сайта*/
+	background-image: url('img/header-bg.jpg');
+	background-repeat: no-repeat;
+	font-family: 'Anton', sans-serif;
+	width:100%;
+
+}
+
+header a{ /*обращаюсь ко всем ссылкам которые находяться в этом контейнере*/
+	color: white;
+}
+
+.menu{ /*класс меню ul*/
+	display: flex; /*выровнивает вес текст на одну строку*/
+	transition: 4.0s;
+}
+.menu a:hover{
+	color: blue;
+	transform: scale(2.1);
+}
+
+.tel:hover{
+	color: yellow;
+	font-size: 18px;
+}
+
+.menu li a{ /*обращаюсь ко всем ссылкам которые находяться в этом контейнере*/
+	text-transform: uppercase; /*сделает буквы большими*/
+	font-style: 14px;
+	text-decoration: none;  /*уберет нижнее подчеркивание*/
+	letter-spacing: 0.1em;
+}
+
+.menu li{  /*расстояние между пунктами меню*/
+	margin-right: 40px;
+}
+/*Внизу гамбургер*/
+.gamb{
+	background-color: transparent;
+	border: 0;
+	margin-left: 20px;
+	margin-right: 2px;
+	display: none;
+}
+.header .show-menu{ /*обращаюсь через родитель*/
+	display: block;
+	width: 50%;
+	height: 25%;
+	padding-bottom: 80px;
+    padding-top: 15px;
+    padding-left: 80px;
+	color: black;
+	position: absolute;
+	margin-left: 200px;
+    margin-top: 280px;
+    background-color: rgb(0,0,0,0.8);
+}
+
+.show-menu li a{
+	line-height: 3em;
+}
+
+.tel{
+	font-size: 17px;
+	text-decoration: none;
+	margin-left: auto; /*слева*/ 
+	letter-spacing: 0.1em;
+	align-items: center;
+}
+
+.nav{
+	padding-top: 57px;
+	display: flex; /*делает все на одной строке*/
+	align-items: center; /*а он делает на сентре этой строке*/
+}
+
+.logo{
+	margin-right: 69px;
+}
+
+
+.cent_text{
+	margin-top: 216px;
+	text-transform: uppercase;
+	transition: 3s;
+}
+
+.cent_text h5{
+	font-size: 30px;
+	color: white;
+	letter-spacing: 0.1em;
+	
+
+}
+
+.cent_text h1{
+	margin-left: -9px;
+	font-size: 100px;
+	color: white;
+	letter-spacing: 0em;
+	
+}
+
+.book{
+	font-size: 17px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	border: 1px solid #fff;
+	width: 238px;
+	padding: 17px 47px;
+	margin-top: 37px;	
+	margin-bottom: 300px;
+	transition: 0.4s
+	
+}
+
+.book:hover{
+	transform: rotate(-30deg);
+}
+
+.dazzvs {
+	color: transparent; /*сделать прозрачным*/
+}
+
+
+.about h2{
+	margin-top: 100px;
+	font-size: 50px;
+	text-transform: uppercase;
+	margin-bottom: 74px;
+}
+
+.cnt1 h5{
+	font-size: 25px;
+	margin-bottom: 32px;
+}
+.cnt2 h5{
+	font-size: 25px;
+	margin-bottom: 32px;
+}
+
+.cnt1{
+	margin-right: 36px;
+	width: 564px;
+	height: auto;
+}
+
+.cnt2 {
+	width: 564px;
+	height: auto;
+	
+}
+
+
+.txt{
+	display: flex;
+	margin-bottom: 67px;
+}
+
+
+.img1{
+	margin-right: 23px;
+	transition: 0.3s;
+}
+.img1:hover{
+	transform: scale(1.1);
+}
+
+.img2{
+	margin-right: 27px;
+	transition: 0.3s;
+}
+
+.img3{
+	margin-right: 0px;
+	transition: 0.3s;
+}
+
+.img2:hover{
+	transform: scale(1.1);
+}
+
+.img3:hover{
+	transform: scale(1.1);
+}
+
+.end {
+	margin-top: 70px;
+	background-color: black;
+	width: 100%;
+	height: 150px;
+}
+
+.end p{
+	font-size: 25px;
+	color: white;
+}
+.one{
+	display: flex;
+	font-size: 20px
+
+}
+.one a{
+	margin: auto;
+}
+
+.two{
+	margin-top: 20px;
+	display: flex;
+	font-size: 20px;
+}
+
+.two a{
+	margin: auto;
+}
+
+.end a{
+	color: white
+}
+
+.end a:hover{
+	color: grey;
+}
+/* Внизу
+Адаптация под другим устройствам*/
+/*Лептоп и Десктопы*/
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 1140px;
+	}	
+}
+/*Ipad и Лептоп - горизонтально*/
+@media screen and (max-width: 1199px) {
+	.container {
+		width: 920px;
+	}
+	.img1{
+	margin-right: 10px;
+	width: 25%;
+	}
+	.img2{
+	margin-right: 10px;
+	width: 25%;	
+	}
+	.img3{
+	width: 45%;
+	height: 305px;
+	}
+}
+/*Планшет*/
+@media screen and (max-width: 991px) {
+	.container {
+		width: 720px;
+	}
+	.img3{
+	width: 45%;
+	height: 230px;
+	}	
+}
+/*Полупланшет*/
+@media screen and (max-width: 767px) {
+	.container {
+		width: 540px;
+	}	
+}
+/*Для тел и смартвоноф*/
+@media screen and (max-width: 575px) {
+	.container {
+		width: 96%;
+		padding: 0 15px;
+	}	
+	.menu {
+		display: none;
+	}
+
+	.gamb{
+		display: block;
+	}
+	.book {
+		padding: 9px 0px;
+	    width: 160px;
+	}
+	.cent_text{
+	margin-top: 56px;
+	}
+	.about h2{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	}
+	.cent_text h1{
+	line-height: 1em;
+    margin-top: 10px;
+	
+	}
+	.cent_text h5{
+	margin-top: 80px;
+	}
+	.txt h5{
+	margin-top: 30px;
+	margin-bottom: 15px;
+	}
+	.txt {
+	flex-wrap: wrap;
+	}
+	.img{
+	flex-wrap: wrap; /*уберет функцию на одной стороке, позволяет сделать контент более красивой для телефона*/ 
+	}
+	.img1{
+		width: 100%;
+	}
+	.img2{
+		width: 100%;
+	}
+	.img3{
+		width: 100%;
+	}
+	.end{
+		height: 110px;
+	}
+	.end a{
+	font-size: 15px;
+	}
+	.end p{
+		margin: 10px;
+	}
+}
